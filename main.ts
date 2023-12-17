@@ -1,6 +1,7 @@
 import { Router } from "./router.ts";
 
-const kv = await Deno.openKv('./db/data') // deno 可以使用顶层 await
+// const kv = await Deno.openKv('./db/data') // deno 可以使用顶层 await
+const kv = await Deno.openKv()
 
 Deno.serve(
   {
